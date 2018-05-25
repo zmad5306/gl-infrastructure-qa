@@ -23,7 +23,7 @@ k8s manifests for qa env
 
 **cloudbuild.yaml location:** /cloudbuild.yaml
 
-#### Substitution variables
+### Substitution variables
 
 | Variable                    | Value               |
 | --------------------------- | -----               |
