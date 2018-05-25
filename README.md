@@ -10,3 +10,22 @@ k8s manifests for qa env
 ## Create Static IP
 
 `gcloud compute addresses create gl-qa-ip --global`
+
+## Continious Delivery Builds
+
+**Name:** QA CD Build
+
+**Trigger type:** Branch
+
+**Branch (regex):** ^master$
+
+**Build configration:** cloudbuild.yaml
+
+**cloudbuild.yaml location:** /cloudbuild.yaml
+
+#### Substitution variables
+
+| Variable                    | Value               |
+| --------------------------- | -----               |
+| _CLOUDSDK_COMPUTE_ZONE      | us-central1-f       |
+| _CLOUDSDK_CONTAINER_CLUSTER | qa                  |
