@@ -27,7 +27,7 @@ spec:
             configMapKeyRef:
               key: list-mongouri
               name: gl-config
-        image: gcr.io/oceanic-isotope-199421/github-zmad5306-gl-list:v0.0.2.5
+        image: gcr.io/grocery-list-205220/github-zmad5306-gl-list:v0.0.2.6
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 5
